@@ -7,7 +7,7 @@ public class Encryptor {
     char[] charText;
     int x;
 
-    public void encry() {
+    public void encryp() {
         System.out.print("Enter text here: ");
         text = sc.nextLine();
         System.out.print("Enter number from 1 to 9\n(if your choice is 1, the string will not to be encrypted): ");
@@ -21,7 +21,7 @@ public class Encryptor {
         System.out.println(charText);
     }
 
-    public void decry() {
+    public void decryp() {
         for ( int i = 0; i <= text.length() - 1; i++ ) {
             charText[i] -= Math.pow(x, 3) - 1;
         }
